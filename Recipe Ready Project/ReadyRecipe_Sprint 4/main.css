@@ -1,0 +1,96 @@
+
+body
+{
+    background-color:#A3D5FF;
+    font-family: sans-serif;
+    margin:0px;
+
+}
+#main{
+    padding:15px;
+    margin-left: 175px;
+    margin-right: 50px;
+    padding: 20px;
+    background-color: white;
+
+}
+
+#sidebar{
+    float: left;
+    width: 150px;
+    overflow: hidden;
+    margin: 20px;
+    border-right: 2px solid #EBF6FF;
+
+}
+
+
+h1{
+    text-align: center;
+    padding: 5px;
+
+
+
+}
+
+h3{
+    text-align:center;
+    font-size:90%;
+    color: #4C555C;
+}
+
+
+label{
+    color: #0361A8;
+    font-size: 17px;
+
+}
+#Uname, #Pass{
+
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+}
+
+
+#log{
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 17px;
+    padding-left: 7px;
+    color: #0168B7;
+
+
+}
+span{
+    color: white;
+    font-size: 17px;
+}
+a:hover{
+    background-color: white;
+}
+
+a {
+    color: #0168B7;
+}
+a:visited {
+    color: #003B6B;
+}
+
+#ingredients {
+    border-spacing: 15px;
+}
+
+#directions {
+    border-spacing: 15px;
+}
+
+#pic {
+    display: block;
+    margin: auto;
+    max-width: 200px;
+    height: auto;
+}
