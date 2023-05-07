@@ -186,3 +186,16 @@ function convert_to_decimal($frac_qty) {
     // Otherwise, calculate the decimal equivalent of the fraction
     return $parts[0];
 }
+
+function check_saved($recID, $userID) {
+    global $db;
+    $query = "SELECT * FROM savedRec "
+            . "WHERE userID = :userID AND recipeID = :recipeID";
+    $statement = $db->prepare($query);
+    $statement->bindValue(':userID', $userID);
+    $statement->bindValue(':recipeID', $recID);
+    $statement->execute();
+    $recipes = $statement->fetchAll();
+    $statement->closeCursor();
+    return $recipes;
+}
